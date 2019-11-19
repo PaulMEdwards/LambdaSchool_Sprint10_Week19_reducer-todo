@@ -1,0 +1,58 @@
+.App {
+  padding: 2em;
+  text-align: center;
+  background-color: black;
+  color: darkgrey;
+  min-height: 100vh;
+
+  .App-link {
+    color: skyblue;
+  }
+
+  .header {
+    /* min-height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* font-size: calc(10px + 2vmin); */
+  
+    .logo {
+      /* height: 40vmin; */
+    }
+  }
+
+  section {
+    .Input {
+      input,button {
+        background-color: black;
+        color: darkgrey;
+      }
+    }
+
+    .Tasks {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-gap: 0.5rem;
+
+      .Task-Item {
+        margin: 1em;
+        padding: 0.5em;
+        border: 1px solid;
+        border-radius: 5px;
+
+        p {
+          padding: 5px;
+
+          .icon {
+            font-size: 0.9rem;
+            cursor: pointer;
+          }
+        }
+        p.Task-Completed {
+          text-decoration: line-through;
+        }
+      }
+    }
+  }
+}

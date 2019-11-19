@@ -31,14 +31,14 @@ Follow these steps for completing your project.
 - [x] Submit a Pull-Request to merge `<firstName-lastName>` Branch into master (student's Repository). **Please don't merge your own pull request**
 - [ ] Add your team lead as a reviewer on the pull-request
 - [ ] Your team lead will count the project as complete by merging the branch back into master.
-- [ ] Do your magic!
+- [x] Do your magic!
 
 ## Minimum Viable Product
 
 1. Set an initial state value through a reducer and render a list of todos from that state
 1. Add a form that dispatches an "ADD_TODO" action to be able to add a todo item to your list
 1. Build a function that let's you mark todo items as completed when you click on them
-1. Biuld a function that let's you clear completed todos when you click on a "Clear Completed" button
+1. Build a function that let's you clear completed todos when you click on a "Clear Completed" button
 
 ### STEP 1 - Build a simple reducer and initial state
 
