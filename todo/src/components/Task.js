@@ -10,22 +10,16 @@ library.add(faEdit, faTrashAlt);
 const Task = () => {
   const [state, dispatch] = useReducer(todoReducer, initialState);
   const [newTodo, setNewTodo] = useState('');
-  // const [id, setId] = useState(Date.now());
-  // const [item, setItem] = useState("");
-  // const [completed, setCompleted] = useState(false);
 
   const handleNewTodo = e => {
     setNewTodo(e.target.value);
   };
-  // const handleCompleted = e => {
-  //   setCompleted(e.target.value);
-  // }
 
   const clearDone = () => {
-    console.log('clearDone');
+    // console.log('clearDone');
     dispatch({type: 'CLEAR_DONE'})
-    console.log('state in task: ', state);
-    console.log('state.length in task: ', state && state.length);
+    // console.log('state in task: ', state);
+    // console.log('state.length in task: ', state && state.length);
   };
 
   return (
@@ -54,7 +48,6 @@ const Task = () => {
                   type="checkbox"
                   name="completed"
                   value={task.completed}
-                  // onClick={handleCompleted}
                   onClick={() => dispatch({type:'TOGGLE_COMPLETED', payload: task.id})}
                 />
                 {task.item}

@@ -26,8 +26,8 @@ export const todoReducer = (state, action) => {
         }
       });
     case 'CLEAR_DONE':
-      console.log('state in reducer: ', state);
-      console.log('state.length in reducer: ', state && state.length);
+      // console.log('state in reducer: ', state);
+      // console.log('state.length in reducer: ', state && state.length);
       if (state && state.length && state.length > 0) {
         return state.filter(todo => {
           return !todo.completed;
